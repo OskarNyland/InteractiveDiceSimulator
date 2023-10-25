@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Dice Roller</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Virtual Dice Roller</h1>
+    <p>Click the dice to roll. Customize the faces using the form below.</p>
+
+    <div id="dice" onclick="rollDice()">
+      <div class="face" id="face1">One</div>
+      <div class="face hidden" id="face2">Two</div>
+      <div class="face hidden" id="face3">Three</div>
+      <div class="face hidden" id="face4">Four</div>
+      <div class="face hidden" id="face5">Five</div>
+      <div class="face hidden" id="face6">Six</div>
+    </div>
+
+    <div id="result">Click to roll the dice</div>
+
+    <form id="customizeForm">
+      <label for="face1Input">Face 1:</label>
+      <input type="text" id="face1Input" value="One">
+      <label for="face2Input">Face 2:</label>
+      <input type="text" id="face2Input" value="Two">
+      <label for="face3Input">Face 3:</label>
+      <input type="text" id="face3Input" value="Three">
+      <label for="face4Input">Face 4:</label>
+      <input type="text" id="face4Input" value="Four">
+      <label for="face5Input">Face 5:</label>
+      <input type="text" id="face5Input" value="Five">
+      <label for="face6Input">Face 6:</label>
+      <input type="text" id="face6Input" value="Six">
+      <button type="button" onclick="updateLabels()">Apply Changes</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

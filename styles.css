@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  #dice {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    margin-right: 50px; /* Increased right margin for spacing */
+  }
+  
+  #dice:hover {
+    transform: scale(1.1);
+  }
+  
+  #result {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .face {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .face.visible {
+    opacity: 1;
+  }
+  
+  .face.one { background-color: #ff4757; }
+  .face.two { background-color: #2ed573; }
+  .face.three { background-color: #576574; }
+  .face.four { background-color: #ff7f50; }
+  .face.five { background-color: #3498db; }
+  .face.six { background-color: #f39c12; }
+  
+  /* Customize form styles */
+  #customizeForm {
+    margin-top: 20px;
+  }
+  
+  #customizeForm label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  #container {
+    text-align: center; /* Center the content */
+    margin-top: 50px; /* Upper margin for the container */
+    margin-bottom: 50px; /* Lower margin for the container */
+  }
+  
+  h1 {
+    margin-top: 20px; /* Upper margin for the title */
+  }
+  
+  #customizeForm {
+    margin-top: 20px; /* Upper margin for the form */
+    margin-bottom: 20px; /* Lower margin for the form */
+  }
+  #customizeForm input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  #customizeForm button {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #customizeForm button:hover {
+    background-color: #2980b9;
+  }
+  
